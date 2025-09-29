@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-fira: "Fira Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --breakpoint-xs: 17.5rem;
+  --breakpoint-xss: 31.25rem;
+}
+.bg-custom {
+  background: 
+    radial-gradient(83.85% 100% at 49.64% 0%, #54b7e7 0%, #0093dd 100%), 
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+}

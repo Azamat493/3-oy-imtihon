@@ -1,11 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Евразия</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/лого 1.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body class="bg-[#fff]">
+    <header
+      class="header bg-white border-b sticky top-0 z-[999] border-gray-200"
+    >
+      <div
+        class="md:flex md:mb-[5px] hidden flex-row items-end justify-end gap-[10px] max-w-[1440px] w-[73%] mx-auto font-normal text-lg p-[0_30px] text-[#b0b0b0] font-inter xs:flex-col xs:items-start xs:justify-start xs:gap-2 xs:p-4 xs:w-full xs:max-w-none md:flex-row md:items-end md:justify-center lg:justify-end md:gap-[10px] md:p-[0_30px] md:w-[73%] md:max-w-[1440px]"
+      >
+        <span>Схема проезда</span>
+        <div class="flex items-center">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.36732 9.96659L6.13398 11.1999C5.87398 11.4599 5.46065 11.4599 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.2999 3.66732 9.57325 3.11398 8.81325C2.56732 8.05325 2.12732 7.29325 1.80732 6.53992C1.49398 5.77992 1.33398 5.05325 1.33398 4.35992C1.33398 3.90659 1.41398 3.47325 1.57398 3.07325C1.73398 2.66659 1.98732 2.29325 2.34065 1.95992C2.76732 1.53992 3.23398 1.33325 3.72732 1.33325C3.91398 1.33325 4.10065 1.37325 4.26732 1.45325C4.44065 1.53325 4.59398 1.65325 4.71398 1.82659L6.26065 4.00659C6.38065 4.17325 6.46732 4.32659 6.52732 4.47325C6.58732 4.61325 6.62065 4.75325 6.62065 4.87992C6.62065 5.03992 6.57398 5.19992 6.48065 5.35325C6.39398 5.50659 6.26732 5.66659 6.10732 5.82659L5.60065 6.35325C5.52732 6.42659 5.49398 6.51325 5.49398 6.61992C5.49398 6.67325 5.50065 6.71992 5.51398 6.77325C5.53398 6.82659 5.55398 6.86659 5.56732 6.90659C5.68732 7.12659 5.89398 7.41325 6.18732 7.75992C6.48732 8.10659 6.80732 8.45992 7.15398 8.81325C7.22065 8.87992 7.29398 8.94659 7.36065 9.01325C7.62732 9.27325 7.63398 9.69992 7.36732 9.96659Z"
+              fill="#B0B0B0"
+            />
+            <path
+              d="M14.6471 12.2201C14.6471 12.4068 14.6137 12.6001 14.5471 12.7868C14.5271 12.8401 14.5071 12.8934 14.4804 12.9468C14.3671 13.1868 14.2204 13.4134 14.0271 13.6268C13.7004 13.9868 13.3404 14.2468 12.9337 14.4134C12.9271 14.4134 12.9204 14.4201 12.9137 14.4201C12.5204 14.5801 12.0937 14.6668 11.6337 14.6668C10.9537 14.6668 10.2271 14.5068 9.46039 14.1801C8.69372 13.8534 7.92706 13.4134 7.16706 12.8601C6.90706 12.6668 6.64706 12.4734 6.40039 12.2668L8.58039 10.0868C8.76706 10.2268 8.93372 10.3334 9.07372 10.4068C9.10706 10.4201 9.14706 10.4401 9.19372 10.4601C9.24706 10.4801 9.30039 10.4868 9.36039 10.4868C9.47372 10.4868 9.56039 10.4468 9.63372 10.3734L10.1404 9.87344C10.3071 9.70677 10.4671 9.58011 10.6204 9.50011C10.7737 9.40677 10.9271 9.36011 11.0937 9.36011C11.2204 9.36011 11.3537 9.38677 11.5004 9.44677C11.6471 9.50677 11.8004 9.59344 11.9671 9.70677L14.1737 11.2734C14.3471 11.3934 14.4671 11.5334 14.5404 11.7001C14.6071 11.8668 14.6471 12.0334 14.6471 12.2201Z"
+              fill="#B0B0B0"
+            />
+          </svg>
+          <a href="#" class="font-normal"> +79227288288</a>
+        </div>
+        <div class="flex items-center">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.36732 9.96659L6.13398 11.1999C5.87398 11.4599 5.46065 11.4599 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.2999 3.66732 9.57325 3.11398 8.81325C2.56732 8.05325 2.12732 7.29325 1.80732 6.53992C1.49398 5.77992 1.33398 5.05325 1.33398 4.35992C1.33398 3.90659 1.41398 3.47325 1.57398 3.07325C1.73398 2.66659 1.98732 2.29325 2.34065 1.95992C2.76732 1.53992 3.23398 1.33325 3.72732 1.33325C3.91398 1.33325 4.10065 1.37325 4.26732 1.45325C4.44065 1.53325 4.59398 1.65325 4.71398 1.82659L6.26065 4.00659C6.38065 4.17325 6.46732 4.32659 6.52732 4.47325C6.58732 4.61325 6.62065 4.75325 6.62065 4.87992C6.62065 5.03992 6.57398 5.19992 6.48065 5.35325C6.39398 5.50659 6.26732 5.66659 6.10732 5.82659L5.60065 6.35325C5.52732 6.42659 5.49398 6.51325 5.49398 6.61992C5.49398 6.67325 5.50065 6.71992 5.51398 6.77325C5.53398 6.82659 5.55398 6.86659 5.56732 6.90659C5.68732 7.12659 5.89398 7.41325 6.18732 7.75992C6.48732 8.10659 6.80732 8.45992 7.15398 8.81325C7.22065 8.87992 7.29398 8.94659 7.36065 9.01325C7.62732 9.27325 7.63398 9.69992 7.36732 9.96659Z"
+              fill="#B0B0B0"
+            />
+            <path
+              d="M14.6471 12.2201C14.6471 12.4068 14.6137 12.6001 14.5471 12.7868C14.5271 12.8401 14.5071 12.8934 14.4804 12.9468C14.3671 13.1868 14.2204 13.4134 14.0271 13.6268C13.7004 13.9868 13.3404 14.2468 12.9337 14.4134C12.9271 14.4134 12.9204 14.4201 12.9137 14.4201C12.5204 14.5801 12.0937 14.6668 11.6337 14.6668C10.9537 14.6668 10.2271 14.5068 9.46039 14.1801C8.69372 13.8534 7.92706 13.4134 7.16706 12.8601C6.90706 12.6668 6.64706 12.4734 6.40039 12.2668L8.58039 10.0868C8.76706 10.2268 8.93372 10.3334 9.07372 10.4068C9.10706 10.4201 9.14706 10.4401 9.19372 10.4601C9.24706 10.4801 9.30039 10.4868 9.36039 10.4868C9.47372 10.4868 9.56039 10.4468 9.63372 10.3734L10.1404 9.87344C10.3071 9.70677 10.4671 9.58011 10.6204 9.50011C10.7737 9.40677 10.9271 9.36011 11.0937 9.36011C11.2204 9.36011 11.3537 9.38677 11.5004 9.44677C11.6471 9.50677 11.8004 9.59344 11.9671 9.70677L14.1737 11.2734C14.3471 11.3934 14.4671 11.5334 14.5404 11.7001C14.6071 11.8668 14.6471 12.0334 14.6471 12.2201Z"
+              fill="#B0B0B0"
+            />
+          </svg>
+          <a href="#" class="font-normal">+73513790979</a>
+        </div>
+      </div>
+      <div
+        class="max-w-[1440px] w-[90%] mx-auto p-[0_30px_10px_30px] flex flex-row items-center justify-evenly xs:flex-col xs:items-start xs:gap-4 xs:p-4 xs:w-full xs:max-w-none md:flex-col lg:flex-row md:items-center md:justify-evenly md:p-[0_30px_10px_30px] md:w-[90%] md:max-w-[1440px]"
+      >
+        <div class="flex items-center">
+          <img
+            src="./images/Group 5729.svg"
+            alt="Логотип"
+            class="w-full xs:w-20 hidden md:flex md:w-full"
+          />
+        </div>
+        <nav
+          class="flex items-center gap-6 font-normal text-lg text-black font-inter xs:hidden md:flex"
+        >
+          <a href="#" class="text-black hover:text-blue-600">Курорт</a>
+          <a href="#" class="text-black hover:text-blue-600">Проживание</a>
+          <a href="#" class="text-black hover:text-blue-600 whitespace-nowrap"
+            >Услуги и тарифы</a
+          >
+          <a href="#" class="text-black hover:text-blue-600">Афиша</a>
+          <a href="#" class="text-black hover:text-blue-600 whitespace-nowrap"
+            >Для бизнеса</a
+          >
+          <a href="#" class="text-black hover:text-blue-700 whitespace-nowrap"
+            >Купить онлайн</a
+          >
+        </nav>
+        <div class="md:hidden flex items-center justify-between w-full p-4">
+          <div class="flex items-center">
+            <img
+              src="./images/Group 5729.svg"
+              alt="Логотип"
+              class="w-[120px] sm:w-[120px]"
+            />
+          </div>
+          <div
+            class="font-normal text-lg text-[#b0b0b0] font-inter hidden xss:block sm:block sm:flex-col sm:items-center sm:gap-[10px]"
+          >
+            <span>Схема проезда</span>
+            <div class="flex items-center">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.36732 9.96659L6.13398 11.1999C5.87398 11.4599 5.46065 11.4599 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.2999 3.66732 9.57325 3.11398 8.81325C2.56732 8.05325 2.12732 7.29325 1.80732 6.53992C1.49398 5.77992 1.33398 5.05325 1.33398 4.35992C1.33398 3.90659 1.41398 3.47325 1.57398 3.07325C1.73398 2.66659 1.98732 2.29325 2.34065 1.95992C2.76732 1.53992 3.23398 1.33325 3.72732 1.33325C3.91398 1.33325 4.10065 1.37325 4.26732 1.45325C4.44065 1.53325 4.59398 1.65325 4.71398 1.82659L6.26065 4.00659C6.38065 4.17325 6.46732 4.32659 6.52732 4.47325C6.58732 4.61325 6.62065 4.75325 6.62065 4.87992C6.62065 5.03992 6.57398 5.19992 6.48065 5.35325C6.39398 5.50659 6.26732 5.66659 6.10732 5.82659L5.60065 6.35325C5.52732 6.42659 5.49398 6.51325 5.49398 6.61992C5.49398 6.67325 5.50065 6.71992 5.51398 6.77325C5.53398 6.82659 5.55398 6.86659 5.56732 6.90659C5.68732 7.12659 5.89398 7.41325 6.18732 7.75992C6.48732 8.10659 6.80732 8.45992 7.15398 8.81325C7.22065 8.87992 7.29398 8.94659 7.36065 9.01325C7.62732 9.27325 7.63398 9.69992 7.36732 9.96659Z"
+                  fill="#B0B0B0"
+                />
+                <path
+                  d="M14.6471 12.2201C14.6471 12.4068 14.6137 12.6001 14.5471 12.7868C14.5271 12.8401 14.5071 12.8934 14.4804 12.9468C14.3671 13.1868 14.2204 13.4134 14.0271 13.6268C13.7004 13.9868 13.3404 14.2468 12.9337 14.4134C12.9271 14.4134 12.9204 14.4201 12.9137 14.4201C12.5204 14.5801 12.0937 14.6668 11.6337 14.6668C10.9537 14.6668 10.2271 14.5068 9.46039 14.1801C8.69372 13.8534 7.92706 13.4134 7.16706 12.8601C6.90706 12.6668 6.64706 12.4734 6.40039 12.2668L8.58039 10.0868C8.76706 10.2268 8.93372 10.3334 9.07372 10.4068C9.10706 10.4201 9.14706 10.4401 9.19372 10.4601C9.24706 10.4801 9.30039 10.4868 9.36039 10.4868C9.47372 10.4868 9.56039 10.4468 9.63372 10.3734L10.1404 9.87344C10.3071 9.70677 10.4671 9.58011 10.6204 9.50011C10.7737 9.40677 10.9271 9.36011 11.0937 9.36011C11.2204 9.36011 11.3537 9.38677 11.5004 9.44677C11.6471 9.50677 11.8004 9.59344 11.9671 9.70677L14.1737 11.2734C14.3471 11.3934 14.4671 11.5334 14.5404 11.7001C14.6071 11.8668 14.6471 12.0334 14.6471 12.2201Z"
+                  fill="#B0B0B0"
+                />
+              </svg>
+              <a href="#" class="font-normal"> +79227288288</a>
+            </div>
+            <div class="flex items-center">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.36732 9.96659L6.13398 11.1999C5.87398 11.4599 5.46065 11.4599 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.2999 3.66732 9.57325 3.11398 8.81325C2.56732 8.05325 2.12732 7.29325 1.80732 6.53992C1.49398 5.77992 1.33398 5.05325 1.33398 4.35992C1.33398 3.90659 1.41398 3.47325 1.57398 3.07325C1.73398 2.66659 1.98732 2.29325 2.34065 1.95992C2.76732 1.53992 3.23398 1.33325 3.72732 1.33325C3.91398 1.33325 4.10065 1.37325 4.26732 1.45325C4.44065 1.53325 4.59398 1.65325 4.71398 1.82659L6.26065 4.00659C6.38065 4.17325 6.46732 4.32659 6.52732 4.47325C6.58732 4.61325 6.62065 4.75325 6.62065 4.87992C6.62065 5.03992 6.57398 5.19992 6.48065 5.35325C6.39398 5.50659 6.26732 5.66659 6.10732 5.82659L5.60065 6.35325C5.52732 6.42659 5.49398 6.51325 5.49398 6.61992C5.49398 6.67325 5.50065 6.71992 5.51398 6.77325C5.53398 6.82659 5.55398 6.86659 5.56732 6.90659C5.68732 7.12659 5.89398 7.41325 6.18732 7.75992C6.48732 8.10659 6.80732 8.45992 7.15398 8.81325C7.22065 8.87992 7.29398 8.94659 7.36065 9.01325C7.62732 9.27325 7.63398 9.69992 7.36732 9.96659Z"
+                  fill="#B0B0B0"
+                />
+                <path
+                  d="M14.6471 12.2201C14.6471 12.4068 14.6137 12.6001 14.5471 12.7868C14.5271 12.8401 14.5071 12.8934 14.4804 12.9468C14.3671 13.1868 14.2204 13.4134 14.0271 13.6268C13.7004 13.9868 13.3404 14.2468 12.9337 14.4134C12.9271 14.4134 12.9204 14.4201 12.9137 14.4201C12.5204 14.5801 12.0937 14.6668 11.6337 14.6668C10.9537 14.6668 10.2271 14.5068 9.46039 14.1801C8.69372 13.8534 7.92706 13.4134 7.16706 12.8601C6.90706 12.6668 6.64706 12.4734 6.40039 12.2668L8.58039 10.0868C8.76706 10.2268 8.93372 10.3334 9.07372 10.4068C9.10706 10.4201 9.14706 10.4401 9.19372 10.4601C9.24706 10.4801 9.30039 10.4868 9.36039 10.4868C9.47372 10.4868 9.56039 10.4468 9.63372 10.3734L10.1404 9.87344C10.3071 9.70677 10.4671 9.58011 10.6204 9.50011C10.7737 9.40677 10.9271 9.36011 11.0937 9.36011C11.2204 9.36011 11.3537 9.38677 11.5004 9.44677C11.6471 9.50677 11.8004 9.59344 11.9671 9.70677L14.1737 11.2734C14.3471 11.3934 14.4671 11.5334 14.5404 11.7001C14.6071 11.8668 14.6471 12.0334 14.6471 12.2201Z"
+                  fill="#B0B0B0"
+                />
+              </svg>
+              <a href="#" class="font-normal">+73513790979</a>
+            </div>
+          </div>
+          <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+          <label
+            for="mobile-menu-toggle"
+            class="cursor-pointer p-3 bg-custom rounded-full shadow-md z-50 relative"
+          >
+            <i class="fas fa-bars text-lg text-white"></i>
+          </label>
+          <label
+            for="mobile-menu-toggle"
+            class="fixed inset-0 bg-black/30 hidden peer-checked:block z-40 cursor-pointer"
+          ></label>
+          <div
+            class="fixed top-0 right-0 w-full max-w-xs h-screen bg-custom shadow-xl p-6 pt-[40px] transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out z-50 overflow-y-auto"
+          >
+            <label
+              for="mobile-menu-toggle"
+              class="absolute top-4 right-4 cursor-pointer p-2 rounded-full bg-gray-100"
+            >
+              <i class="fas fa-times text-lg text-[#0093dd]"></i>
+            </label>
+            <nav class="mt-8 space-y-4 mb-[15px]">
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >Каталог</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >Услуги</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >О нас</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >Доставка</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >Отзывы</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >Обучение</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >Контакты</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
+                >ОПТ</a
+              >
+            </nav>
+            <div class="flex flex-col items-center text-white">
+              <span>Схема проезда</span>
+              <div class="flex items-center">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.36732 9.96659L6.13398 11.1999C5.87398 11.4599 5.46065 11.4599 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.2999 3.66732 9.57325 3.11398 8.81325C2.56732 8.05325 2.12732 7.29325 1.80732 6.53992C1.49398 5.77992 1.33398 5.05325 1.33398 4.35992C1.33398 3.90659 1.41398 3.47325 1.57398 3.07325C1.73398 2.66659 1.98732 2.29325 2.34065 1.95992C2.76732 1.53992 3.23398 1.33325 3.72732 1.33325C3.91398 1.33325 4.10065 1.37325 4.26732 1.45325C4.44065 1.53325 4.59398 1.65325 4.71398 1.82659L6.26065 4.00659C6.38065 4.17325 6.46732 4.32659 6.52732 4.47325C6.58732 4.61325 6.62065 4.75325 6.62065 4.87992C6.62065 5.03992 6.57398 5.19992 6.48065 5.35325C6.39398 5.50659 6.26732 5.66659 6.10732 5.82659L5.60065 6.35325C5.52732 6.42659 5.49398 6.51325 5.49398 6.61992C5.49398 6.67325 5.50065 6.71992 5.51398 6.77325C5.53398 6.82659 5.55398 6.86659 5.56732 6.90659C5.68732 7.12659 5.89398 7.41325 6.18732 7.75992C6.48732 8.10659 6.80732 8.45992 7.15398 8.81325C7.22065 8.87992 7.29398 8.94659 7.36065 9.01325C7.62732 9.27325 7.63398 9.69992 7.36732 9.96659Z"
+                    fill="#B0B0B0"
+                  />
+                  <path
+                    d="M14.6471 12.2201C14.6471 12.4068 14.6137 12.6001 14.5471 12.7868C14.5271 12.8401 14.5071 12.8934 14.4804 12.9468C14.3671 13.1868 14.2204 13.4134 14.0271 13.6268C13.7004 13.9868 13.3404 14.2468 12.9337 14.4134C12.9271 14.4134 12.9204 14.4201 12.9137 14.4201C12.5204 14.5801 12.0937 14.6668 11.6337 14.6668C10.9537 14.6668 10.2271 14.5068 9.46039 14.1801C8.69372 13.8534 7.92706 13.4134 7.16706 12.8601C6.90706 12.6668 6.64706 12.4734 6.40039 12.2668L8.58039 10.0868C8.76706 10.2268 8.93372 10.3334 9.07372 10.4068C9.10706 10.4201 9.14706 10.4401 9.19372 10.4601C9.24706 10.4801 9.30039 10.4868 9.36039 10.4868C9.47372 10.4868 9.56039 10.4468 9.63372 10.3734L10.1404 9.87344C10.3071 9.70677 10.4671 9.58011 10.6204 9.50011C10.7737 9.40677 10.9271 9.36011 11.0937 9.36011C11.2204 9.36011 11.3537 9.38677 11.5004 9.44677C11.6471 9.50677 11.8004 9.59344 11.9671 9.70677L14.1737 11.2734C14.3471 11.3934 14.4671 11.5334 14.5404 11.7001C14.6071 11.8668 14.6471 12.0334 14.6471 12.2201Z"
+                    fill="#B0B0B0"
+                  />
+                </svg>
+                <a href="#" class="font-normal"> +79227288288</a>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.36732 9.96659L6.13398 11.1999C5.87398 11.4599 5.46065 11.4599 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.2999 3.66732 9.57325 3.11398 8.81325C2.56732 8.05325 2.12732 7.29325 1.80732 6.53992C1.49398 5.77992 1.33398 5.05325 1.33398 4.35992C1.33398 3.90659 1.41398 3.47325 1.57398 3.07325C1.73398 2.66659 1.98732 2.29325 2.34065 1.95992C2.76732 1.53992 3.23398 1.33325 3.72732 1.33325C3.91398 1.33325 4.10065 1.37325 4.26732 1.45325C4.44065 1.53325 4.59398 1.65325 4.71398 1.82659L6.26065 4.00659C6.38065 4.17325 6.46732 4.32659 6.52732 4.47325C6.58732 4.61325 6.62065 4.75325 6.62065 4.87992C6.62065 5.03992 6.57398 5.19992 6.48065 5.35325C6.39398 5.50659 6.26732 5.66659 6.10732 5.82659L5.60065 6.35325C5.52732 6.42659 5.49398 6.51325 5.49398 6.61992C5.49398 6.67325 5.50065 6.71992 5.51398 6.77325C5.53398 6.82659 5.55398 6.86659 5.56732 6.90659C5.68732 7.12659 5.89398 7.41325 6.18732 7.75992C6.48732 8.10659 6.80732 8.45992 7.15398 8.81325C7.22065 8.87992 7.29398 8.94659 7.36065 9.01325C7.62732 9.27325 7.63398 9.69992 7.36732 9.96659Z"
+                    fill="#B0B0B0"
+                  />
+                  <path
+                    d="M14.6471 12.2201C14.6471 12.4068 14.6137 12.6001 14.5471 12.7868C14.5271 12.8401 14.5071 12.8934 14.4804 12.9468C14.3671 13.1868 14.2204 13.4134 14.0271 13.6268C13.7004 13.9868 13.3404 14.2468 12.9337 14.4134C12.9271 14.4134 12.9204 14.4201 12.9137 14.4201C12.5204 14.5801 12.0937 14.6668 11.6337 14.6668C10.9537 14.6668 10.2271 14.5068 9.46039 14.1801C8.69372 13.8534 7.92706 13.4134 7.16706 12.8601C6.90706 12.6668 6.64706 12.4734 6.40039 12.2668L8.58039 10.0868C8.76706 10.2268 8.93372 10.3334 9.07372 10.4068C9.10706 10.4201 9.14706 10.4401 9.19372 10.4601C9.24706 10.4801 9.30039 10.4868 9.36039 10.4868C9.47372 10.4868 9.56039 10.4468 9.63372 10.3734L10.1404 9.87344C10.3071 9.70677 10.4671 9.58011 10.6204 9.50011C10.7737 9.40677 10.9271 9.36011 11.0937 9.36011C11.2204 9.36011 11.3537 9.38677 11.5004 9.44677C11.6471 9.50677 11.8004 9.59344 11.9671 9.70677L14.1737 11.2734C14.3471 11.3934 14.4671 11.5334 14.5404 11.7001C14.6071 11.8668 14.6471 12.0334 14.6471 12.2201Z"
+                    fill="#B0B0B0"
+                  />
+                </svg>
+                <a href="#" class="font-normal">+73513790979</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="swiper w-[80%] max-w-[1440px] mx-auto">
+          <div class="swiper-wrapper">
+            <div
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/shut.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+
+              <div
+                class="relative z-10 flex flex-col md:flex-row items-start justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
+              >
+                <div class="w-full md:w-[60%] mb-6 md:mb-0">
+                  <h2
+                    class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
+                  >
+                    30 декабря в ЦАО "Евразия" состоится тестовое<br />
+                    открытие 2 склона.
+                  </h2>
+                  <p
+                    class="w-full xss:w-[90%] md:w-[56%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
+                  >
+                    К новогодним праздникам уже подготовлено 5 больших склонов и
+                    учебная трасса, <br />
+                    а также тюбинговая горка.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-[15px] shadow-[2px_4px_18px_0_rgba(0,0,0,0.13)] w-full md:w-auto p-[16px_20px_8px_16px] xss:p-[20px_25px_10px_20px] md:p-[20px_30px_10px_20px]"
+                >
+                  <div class="flex items-center gap-[5px] mb-2 xss:mb-3">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 2.25L8.25 6L4.5 9.75"
+                        stroke="#52536D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <h2
+                      class="font-light text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                    >
+                      Свернуть
+                    </h2>
+                  </div>
+                  <div class="space-y-2 xss:space-y-3">
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-webcam-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Веб-камеры
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-cable-car-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Канатные дороги
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-два-билета-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Билеты
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-маркер-на-карте-100-2 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Карта
+                    </a>
+                  </div>
+                  <div
+                    class="flex items-center gap-2 mt-3 xss:mt-[20px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                  >
+                    Сегодня, sunday 15 января
+                  </div>
+                  <div
+                    class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
+                  >
+                    <div class="flex items-center lg:flex-col lg:items-start">
+                      <img
+                        src="./images/icons8-солнце-100 1.svg"
+                        alt=""
+                        class="w-[16px] xss:w-auto"
+                      />
+                      <span
+                        class="ml-[5px] xss:ml-[7px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                      >
+                        -10
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/back.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+
+              <div
+                class="relative z-10 flex flex-col md:flex-row items-end justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
+              >
+                <div class="w-full md:w-[60%] mb-6 md:mb-0">
+                  <h2
+                    class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
+                  >
+                    Тюбинг
+                  </h2>
+                  <p
+                    class="w-full xss:w-[90%] md:w-[80%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
+                  >
+                    На ЦАО "Евразия" вы всегда можете разнообразить свой отдых и
+                    приобщить своих близких к зимнему активному отдыху. Не
+                    важно, насколько хорошо вы катаетесь на лыжах или сноуборде,
+                    трасса тюбинга подходит для всех.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-[15px] shadow-[2px_4px_18px_0_rgba(0,0,0,0.13)] w-full md:w-auto p-[16px_20px_8px_16px] xss:p-[20px_25px_10px_20px] md:p-[20px_30px_10px_20px]"
+                >
+                  <div class="flex items-center gap-[5px] mb-2 xss:mb-3">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 2.25L8.25 6L4.5 9.75"
+                        stroke="#52536D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <h2
+                      class="font-light text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                    >
+                      Свернуть
+                    </h2>
+                  </div>
+                  <div class="space-y-2 xss:space-y-3">
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-webcam-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Веб-камеры
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-cable-car-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Канатные дороги
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-два-билета-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Билеты
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-маркер-на-карте-100-2 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Карта
+                    </a>
+                  </div>
+                  <div
+                    class="flex items-center gap-2 mt-3 xss:mt-[20px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                  >
+                    Сегодня, sunday 15 января
+                  </div>
+                  <div
+                    class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
+                  >
+                    <div class="flex items-center lg:flex-col lg:items-start">
+                      <img
+                        src="./images/icons8-солнце-100 1.svg"
+                        alt=""
+                        class="w-[16px] xss:w-auto"
+                      />
+                      <span
+                        class="ml-[5px] xss:ml-[7px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                      >
+                        -10
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/grilled.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div class="absolute inset-0 bg-[black] opacity-40"></div>
+
+              <div
+                class="relative z-10 flex flex-col md:flex-row items-end justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
+              >
+                <div class="w-full md:w-[51%] mb-6 md:mb-0">
+                  <h2
+                    class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
+                  >
+                    BBQ площадки
+                  </h2>
+                  <p
+                    class="w-full xss:w-[90%] md:w-[80%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
+                  >
+                    На ЦАО "Евразия" вы всегда сможете отдохнуть большой
+                    компанией в аренах BBQ . Что может быть лучше сочетания
+                    активного отдыха в отличной компании и BBQ собствественного
+                    приготовления?
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-[15px] shadow-[2px_4px_18px_0_rgba(0,0,0,0.13)] w-full md:w-auto p-[16px_20px_8px_16px] xss:p-[20px_25px_10px_20px] md:p-[20px_30px_10px_20px]"
+                >
+                  <div class="flex items-center gap-[5px] mb-2 xss:mb-3">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 2.25L8.25 6L4.5 9.75"
+                        stroke="#52536D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <h2
+                      class="font-light text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                    >
+                      Свернуть
+                    </h2>
+                  </div>
+                  <div class="space-y-2 xss:space-y-3">
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-webcam-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Веб-камеры
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-cable-car-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Канатные дороги
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-два-билета-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Билеты
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-маркер-на-карте-100-2 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Карта
+                    </a>
+                  </div>
+                  <div
+                    class="flex items-center gap-2 mt-3 xss:mt-[20px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                  >
+                    Сегодня, sunday 15 января
+                  </div>
+                  <div
+                    class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
+                  >
+                    <div class="flex items-center lg:flex-col lg:items-start">
+                      <img
+                        src="./images/icons8-солнце-100 1.svg"
+                        alt=""
+                        class="w-[16px] xss:w-auto"
+                      />
+                      <span
+                        class="ml-[5px] xss:ml-[7px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                      >
+                        -10
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/friends.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div class="absolute inset-0 bg-[black] opacity-40"></div>
+
+              <div
+                class="relative z-10 flex flex-col md:flex-row items-end justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
+              >
+                <div class="w-full md:w-[34%] mb-6 md:mb-0">
+                  <h2
+                    class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
+                  >
+                    Отели ЦАО Евразия
+                  </h2>
+                  <p
+                    class="w-full xss:w-[90%] md:w-[80%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
+                  >
+                    Найдите и забронируйте подходящий для Вас отель на
+                    официальном сайте Евразии. Широкий выбор отелей по всему
+                    курорту и самые низкие цены гарантированы
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-[15px] shadow-[2px_4px_18px_0_rgba(0,0,0,0.13)] w-full md:w-auto p-[16px_20px_8px_16px] xss:p-[20px_25px_10px_20px] md:p-[20px_30px_10px_20px]"
+                >
+                  <div class="flex items-center gap-[5px] mb-2 xss:mb-3">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 2.25L8.25 6L4.5 9.75"
+                        stroke="#52536D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <h2
+                      class="font-light text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                    >
+                      Свернуть
+                    </h2>
+                  </div>
+                  <div class="space-y-2 xss:space-y-3">
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-webcam-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Веб-камеры
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-cable-car-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Канатные дороги
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-два-билета-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Билеты
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-маркер-на-карте-100-2 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Карта
+                    </a>
+                  </div>
+                  <div
+                    class="flex items-center gap-2 mt-3 xss:mt-[20px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                  >
+                    Сегодня, sunday 15 января
+                  </div>
+
+                  <div
+                    class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
+                  >
+                    <div class="flex items-center lg:flex-col lg:items-start">
+                      <img
+                        src="./images/icons8-солнце-100 1.svg"
+                        alt=""
+                        class="w-[16px] xss:w-auto"
+                      />
+                      <span
+                        class="ml-[5px] xss:ml-[7px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                      >
+                        -10
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <section class="max-w-[1440px] w-[80%] mx-auto py-8 xs:py-10 md:py-12">
+        <h2
+          class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter mb-6 xs:mb-8"
+        >
+          Центр активного отдыха "Евразия"
+        </h2>
+        <div
+          class="relative max-w-[1440px] mx-auto overflow-hidden rounded-[30px] bg-white shadow-lg"
+        >
+          <div
+            class="absolute inset-0 bg-[url('/images/photo.jpg')] bg-no-repeat bg-center bg-cover"
+          ></div>
+          <div
+            class="relative z-10 p-6 xs:p-8 xss:p-10 md:p-12 lg:p-16 flex items-start"
+          >
+            <div
+              class="max-w-full xss:max-w-[450px] md:max-w-[500px] text-white space-y-3 xs:space-y-4"
+            >
+              <p
+                class="font-medium text-base xs:text-lg xss:text-xl md:text-[26px] leading-[130%] text-white font-inter"
+              >
+                Мы рады приветствовать любителей активного отдыха в нашем
+                экологическом парке — самом динамично развивающемся горнолыжном
+                центре Южного Урала!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section class="max-w-[1440px] w-[80%] mx-auto py-8 xs:py-10 md:py-12 sm:block hidden">
+  <!-- Заголовок и кнопка -->
+  <div class="flex flex-col xs:flex-row items-start xs:items-center justify-between max-w-[1440px] p-0 xs:p-[0_20px_0_0px] mx-auto mb-6 xs:mb-8 gap-4 xs:gap-0">
+    <h2 class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter">
+      Акции и спец предложения
+    </h2>
+    <button class="bg-[#0093dd] hover:bg-blue-600 px-4 xs:pl-[50px] xs:pr-[52px] py-3 xs:py-[15px] rounded-[10px] font-medium text-sm xs:text-base text-white font-inter whitespace-nowrap">
+      Посмотреть все
+    </button>
+  </div>
+
+  <!-- Карточки -->
+  <div class="grid grid-cols-1 xss:grid-cols-2 gap-6 max-w-[1440px] mx-auto">
+
+    <!-- Карточка 1 -->
+    <div class="relative overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-[auto] bg-[url('/images/photo2.jpg')] bg-no-repeat bg-center bg-cover">
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+      <div class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4">
+        <h3 class="font-black w-full xss:w-[80%] text-[20px] xs:text-[24px] xss:text-[28px] md:text-[40px] leading-[110%] text-white font-inter">
+          30 декабря<br>
+          в ЦАО "Евразия"<br>
+          состоится тестовое<br>
+          открытие 2 склона.
+        </h3>
+        <p class="font-normal text-base xs:text-lg xss:text-xl md:text-2xl leading-[120%] text-white font-inter">
+          К новогодним праздникам уже подготовлено<br> 5 больших склонов и учебная трасса,<br> а также тюбинговая горка.
+        </p>
+      </div>
+    </div>
+
+    <!-- Карточка 2 -->
+    <div class="relative overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-h-[auto]  bg-[url('/images/photo2.jpg')] bg-no-repeat bg-center bg-cover">
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+      <div class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4">
+        <h3 class="font-black w-full xss:w-[80%] text-[20px] xs:text-[24px] xss:text-[28px] md:text-[40px] leading-[110%] text-white font-inter">
+          30 декабря<br>
+          в ЦАО "Евразия"<br>
+          состоится тестовое<br>
+          открытие 2 склона.
+        </h3>
+        <p class="font-normal text-base xs:text-lg xss:text-xl md:text-2xl leading-[120%] text-white font-inter">
+          К новогодним праздникам уже подготовлено<br> 5 больших склонов и учебная трасса,<br> а также тюбинговая горка.
+        </p>
+      </div>
+    </div>
+
+    <!-- Карточка 3 -->
+    <div class="relative overflow-hidden rounded-[20px] mt-[30px] shadow-lg w-full h-auto xss:h-[406px]">
+      <img src="./images/photo_2025-09-29_12-30-35.jpg" alt="Новогодняя программа" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative z-10 p-4 xs:p-6 flex items-end">
     
-</body>
+      </div>
+    </div>
+
+    <!-- Карточка 4 -->
+    <div class="relative overflow-hidden rounded-[20px] shadow-lg mt-[30px] w-full h-auto xss:h-[406px] bg-[url('/images/photo3.jpg')] bg-no-repeat bg-center bg-cover">
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+      <div class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4">
+        <h3 class="font-black w-full xss:w-[80%] text-[20px] xs:text-[24px] xss:text-[28px] md:text-[40px] leading-[110%] text-white font-inter">
+          BBQ площадки
+        </h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="p-4 xs:p-5 max-w-[640px] mx-auto w-[90%] sm:hidden">
+  <h2 class="font-black text-xl xs:text-2xl xss:text-3xl leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter">
+    Акции и спец предложения
+  </h2>
+
+  <!-- Карточка 1 -->
+  <div class="mt-6 xs:mt-8 overflow-hidden relative p-4 xs:p-5 bg-[url('/images/Mask.svg')] bg-no-repeat bg-center bg-cover w-full h-auto rounded-[30px] flex flex-col items-center justify-between">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 text-center space-y-2 xs:space-y-3">
+      <h1 class="font-black text-lg xs:text-xl xss:text-2xl leading-[100%] tracking-[-0.04em] text-white font-inter">
+        Евробус - экспресс
+      </h1>
+      <h1 class="font-black text-lg xs:text-xl xss:text-2xl leading-[100%] tracking-[-0.04em] text-white font-inter">
+        челябинск-куса
+      </h1>
+      <p class="font-normal text-base xs:text-lg leading-[100%] tracking-[-0.04em] text-white font-inter">
+        за 3 часа
+      </p>
+    </div>
+    <div class="relative z-10 w-full">
+      <button class="bg-[#0093dd] mt-[20px] hover:bg-blue-600 w-full py-3 xs:py-4 rounded-[10px] font-medium text-sm xs:text-base text-white font-inter">
+        Заказать
+      </button>
+    </div>
+  </div>
+
+  <!-- Карточка 2 -->
+  <div class="mt-6 xs:mt-8 overflow-hidden relative p-4 xs:p-5 bg-[url('/images/Group.svg')] bg-no-repeat bg-center bg-cover w-full h-auto rounded-[30px] flex flex-col items-center justify-between">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 text-center space-y-2 xs:space-y-3">
+      <h1 class="font-black text-lg xs:text-xl xss:text-2xl leading-[100%] tracking-[-0.04em] text-white font-inter">
+        Снежные будни
+      </h1>
+      <h1 class="font-black text-sm xs:text-base xss:text-lg leading-[100%] tracking-[-0.04em] text-white font-inter">
+        прокат снаряжения + кресельный подъёмник
+      </h1>
+      <p class="font-normal text-xs xs:text-sm leading-[100%] tracking-[-0.04em] text-white font-inter">
+        с понедельника по пятницу
+      </p>
+      <div class="mt-2">
+        <p class="font-black text-2xl xs:text-3xl xss:text-4xl leading-[100%] tracking-[-0.04em] uppercase text-white font-inter">
+          1400
+          <span class="font-normal text-xs xs:text-sm leading-[100%] tracking-[-0.04em] text-white font-inter"> руб.</span>
+        </p>
+        <p class="font-black text-2xl xs:text-3xl xss:text-4xl leading-[100%] tracking-[-0.04em] uppercase text-white font-inter mt-1">
+          4
+          <span class="font-normal text-xs xs:text-sm leading-[100%] tracking-[-0.04em] text-white font-inter"> часа</span>
+        </p>
+      </div>
+    </div>
+    <div class="relative z-10 w-full mt-4">
+      <button class="bg-[#0093dd] hover:bg-blue-600 w-full py-3 xs:py-4 rounded-[10px] font-medium text-sm xs:text-base text-white font-inter">
+        Заказать
+      </button>
+    </div>
+  </div>
+</section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
 </html>
