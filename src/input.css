@@ -8,6 +8,7 @@
   --font-manrope: "Manrope", sans-serif;
   --breakpoint-xs: 17.5rem;
   --breakpoint-xss: 31.25rem;
+  --breakpoint-xsss: 23.4375rem;
 }
 .bg-custom {
   background: 
