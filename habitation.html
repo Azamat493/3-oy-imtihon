@@ -40,7 +40,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
   </head>
   <body class="bg-[#fff]">
     <header
@@ -67,7 +74,7 @@
               fill="#B0B0B0"
             />
           </svg>
-          <a href="#" class="font-normal"> +79227288288</a>
+          <a href="#" class="font-normal text-black"> +79227288288</a>
         </div>
         <div class="flex items-center">
           <svg
@@ -86,7 +93,7 @@
               fill="#B0B0B0"
             />
           </svg>
-          <a href="#" class="font-normal">+73513790979</a>
+          <a href="#" class="font-normal text-black">+73513790979</a>
         </div>
       </div>
       <div
@@ -104,10 +111,8 @@
         <nav
           class="flex items-center gap-6 font-normal text-lg text-black font-inter xs:hidden md:flex"
         >
-          <a href="#" class="text-black hover:text-blue-600">Курорт</a>
-          <a href="./habitation.html" class="text-black hover:text-blue-600"
-            >Проживание</a
-          >
+          <a href="./index.html" class="text-black hover:text-blue-600">Курорт</a>
+          <a href="#" class="text-black hover:text-blue-600">Проживание</a>
           <a href="#" class="text-black hover:text-blue-600 whitespace-nowrap"
             >Услуги и тарифы</a
           >
@@ -282,126 +287,8 @@
         <div class="swiper w-[80%] max-w-[1440px] mx-auto">
           <div class="swiper-wrapper">
             <div
-              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/shut.svg')] bg-no-repeat bg-center bg-cover"
-              data-aos="fade-up"
-            >
-              <div class="absolute inset-0 bg-black opacity-40"></div>
-
-              <div
-                class="relative z-10 flex flex-col md:flex-row items-start justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
-              >
-                <div class="w-full md:w-[60%] mb-6 md:mb-0">
-                  <h2
-                    class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
-                  >
-                    30 декабря в ЦАО "Евразия" состоится тестовое<br />
-                    открытие 2 склона.
-                  </h2>
-                  <p
-                    class="w-full xss:w-[90%] md:w-[56%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
-                  >
-                    К новогодним праздникам уже подготовлено 5 больших склонов и
-                    учебная трасса, <br />
-                    а также тюбинговая горка.
-                  </p>
-                </div>
-                <div
-                  class="bg-white rounded-[15px] shadow-[2px_4px_18px_0_rgba(0,0,0,0.13)] w-full md:w-auto p-[16px_20px_8px_16px] xss:p-[20px_25px_10px_20px] md:p-[20px_30px_10px_20px]"
-                >
-                  <div class="flex items-center gap-[5px] mb-2 xss:mb-3">
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.5 2.25L8.25 6L4.5 9.75"
-                        stroke="#52536D"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <h2
-                      class="font-light text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
-                    >
-                      Свернуть
-                    </h2>
-                  </div>
-                  <div class="space-y-2 xss:space-y-3">
-                    <a
-                      href="#"
-                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
-                    >
-                      <img
-                        src="./images/icons8-webcam-100 1.svg"
-                        alt=""
-                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
-                      />
-                      Веб-камеры
-                    </a>
-                    <a
-                      href="#"
-                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
-                    >
-                      <img
-                        src="./images/icons8-cable-car-100 1.svg"
-                        alt=""
-                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
-                      />
-                      Канатные дороги
-                    </a>
-                    <a
-                      href="#"
-                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
-                    >
-                      <img
-                        src="./images/icons8-два-билета-100 1.svg"
-                        alt=""
-                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
-                      />
-                      Билеты
-                    </a>
-                    <a
-                      href="#"
-                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
-                    >
-                      <img
-                        src="./images/icons8-маркер-на-карте-100-2 1.svg"
-                        alt=""
-                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
-                      />
-                      Карта
-                    </a>
-                  </div>
-                  <div
-                    class="flex items-center gap-2 mt-3 xss:mt-[20px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
-                  >
-                    Сегодня, sunday 15 января
-                  </div>
-                  <div
-                    class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
-                  >
-                    <div class="flex items-center lg:flex-col lg:items-start">
-                      <img
-                        src="./images/icons8-солнце-100 1.svg"
-                        alt=""
-                        class="w-[16px] xss:w-auto"
-                      />
-                      <span
-                        class="ml-[5px] xss:ml-[7px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
-                      >
-                        -10
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
               class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/back.svg')] bg-no-repeat bg-center bg-cover"
+              data-aos="fade-up"
             >
               <div class="absolute inset-0 bg-black opacity-40"></div>
 
@@ -754,371 +641,390 @@
                 </div>
               </div>
             </div>
+            <div
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/shut.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+
+              <div
+                class="relative z-10 flex flex-col md:flex-row items-start justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
+              >
+                <div class="w-full md:w-[60%] mb-6 md:mb-0">
+                  <h2
+                    class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
+                  >
+                    30 декабря в ЦАО "Евразия" состоится тестовое<br />
+                    открытие 2 склона.
+                  </h2>
+                  <p
+                    class="w-full xss:w-[90%] md:w-[56%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
+                  >
+                    К новогодним праздникам уже подготовлено 5 больших склонов и
+                    учебная трасса, <br />
+                    а также тюбинговая горка.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-[15px] shadow-[2px_4px_18px_0_rgba(0,0,0,0.13)] w-full md:w-auto p-[16px_20px_8px_16px] xss:p-[20px_25px_10px_20px] md:p-[20px_30px_10px_20px]"
+                >
+                  <div class="flex items-center gap-[5px] mb-2 xss:mb-3">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 2.25L8.25 6L4.5 9.75"
+                        stroke="#52536D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <h2
+                      class="font-light text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                    >
+                      Свернуть
+                    </h2>
+                  </div>
+                  <div class="space-y-2 xss:space-y-3">
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-webcam-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Веб-камеры
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-cable-car-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Канатные дороги
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-два-билета-100 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Билеты
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center gap-2 font-medium text-[13px] xss:text-sm leading-[130%] text-[#645252] font-inter hover:text-blue-600"
+                    >
+                      <img
+                        src="./images/icons8-маркер-на-карте-100-2 1.svg"
+                        alt=""
+                        class="w-full max-w-[24px] xss:max-w-[29px] h-auto"
+                      />
+                      Карта
+                    </a>
+                  </div>
+                  <div
+                    class="flex items-center gap-2 mt-3 xss:mt-[20px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                  >
+                    Сегодня, sunday 15 января
+                  </div>
+                  <div
+                    class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
+                  >
+                    <div class="flex items-center lg:flex-col lg:items-start">
+                      <img
+                        src="./images/icons8-солнце-100 1.svg"
+                        alt=""
+                        class="w-[16px] xss:w-auto"
+                      />
+                      <span
+                        class="ml-[5px] xss:ml-[7px] font-medium text-[9px] xss:text-[10px] leading-[130%] text-[#645252] font-inter"
+                      >
+                        -10
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </section>
 
-      <section
-        class="max-w-[1440px] w-[80%] mx-auto py-8 xs:py-10 md:py-12"
-        data-aos="fade-up"
-      >
+      <section class="mt-[50px] max-w-[1440px] mx-auto w-[90%] px-4">
+        <h1
+          class="font-semibold w-[70%] xs:w-full max-w-full mx-auto text-base xs:text-sm leading-[91%] text-center text-[#0093dd] font-inter"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          Тюбинговая трасса, продолжительностью 150 метров, расположена возле
+          административного здания ЦАО "Евразия".
+        </h1>
+        <h1
+          class="font-semibold mt-[20px] w-[70%] xs:w-full max-w-full mx-auto text-base xs:text-sm leading-[91%] text-center text-[#0093dd] font-inter"
+        >
+          Трасса ориентирована на детей до 16 лет, но воспользоваться ей может
+          любой взрослый.
+        </h1>
+        <h1
+          class="font-semibold mt-[20px] w-[70%] xs:w-full max-w-full mx-auto text-base xs:text-sm leading-[91%] text-center text-[#0093dd] font-inter"
+        >
+          Подъемник - отсутствует.
+        </h1>
         <h2
-          class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter mb-6 xs:mb-8"
+          class="mt-[30px] mx-auto font-semibold text-4xl xs:text-2xl sm:text-3xl leading-[122%] tracking-[-0.02em] text-center text-[#101828] font-inter"
         >
-          Центр активного отдыха "Евразия"
+          ТРАССА "ТЮБИНГ" ОТКРЫТА
         </h2>
-        <div
-          class="relative max-w-[1440px] mx-auto overflow-hidden rounded-[30px] bg-white shadow-lg"
-        >
-          <div
-            class="absolute inset-0 bg-[url('/images/photo.jpg')] bg-no-repeat bg-center bg-cover"
-          ></div>
-          <div
-            class="relative z-10 p-6 xs:p-8 xss:p-10 md:p-12 lg:p-16 flex items-start"
-          >
-            <div
-              class="max-w-full xss:max-w-[450px] md:max-w-[500px] text-white space-y-3 xs:space-y-4"
-            >
-              <p
-                class="font-medium text-base xs:text-lg xss:text-xl md:text-[26px] leading-[130%] text-white font-inter"
-              >
-                Мы рады приветствовать любителей активного отдыха в нашем
-                экологическом парке — самом динамично развивающемся горнолыжном
-                центре Южного Урала!
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section
-        class="max-w-[1440px] w-[80%] mx-auto py-8 xs:py-10 md:py-12 sm:block hidden"
-        data-aos="fade-up"
-      >
-        <div
-          class="flex flex-col xs:flex-row items-start xs:items-center justify-between max-w-[1440px] p-0 xs:p-[0_20px_0_0px] mx-auto mb-6 xs:mb-8 gap-4 xs:gap-0"
-        >
+      <section class="max-w-[1440px] mx-auto w-[80%]">
+        <div class="px-4 py-8" data-aos="fade-up" data-aos-duration="700">
           <h2
-            class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter"
+            class="font-extrabold text-lg leading-[156%] uppercase text-[#0093dd] font-inter mb-6"
           >
-            Акции и спец предложения
+            СТОИМОСТЬ ПРОКАТА ВАТРУШЕК (ТЮБИНГ).
           </h2>
-          <button
-            class="bg-[#0093dd] cursor-pointer hover:bg-blue-600 px-4 xs:pl-[50px] xs:pr-[52px] py-3 xs:py-[15px] rounded-[10px] font-medium text-sm xs:text-base text-white font-inter whitespace-nowrap"
-          >
-            Посмотреть все
-          </button>
-        </div>
-        <div
-          class="grid grid-cols-1 xss:grid-cols-2 gap-6 max-w-[1440px] mx-auto"
-        >
           <div
-            class="relative overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-[auto] bg-[url('/images/photo2.jpg')] bg-no-repeat bg-center bg-cover"
-            data-aos="zoom-in"
-            data-aos-delay="100"
+            class="font-medium text-xs leading-[150%] text-[#667085] font-inter overflow-hidden overflow-x-auto"
           >
-            <div class="absolute inset-0 bg-black opacity-40"></div>
             <div
-              class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4"
+              class="grid grid-cols-6 gap-4 p-4 border-b border-gray-200 min-w-[1078px]"
             >
-              <h3
-                class="font-black w-full xss:w-[80%] text-[20px] xs:text-[24px] xss:text-[28px] md:text-[40px] leading-[110%] text-white font-inter"
-              >
-                30 декабря<br />
-                в ЦАО "Евразия"<br />
-                состоится тестовое<br />
-                открытие 2 склона.
-              </h3>
-              <p
-                class="font-normal text-base xs:text-lg xss:text-xl md:text-2xl leading-[120%] text-white font-inter"
-              >
-                К новогодним праздникам уже подготовлено<br />
-                5 больших склонов и учебная трасса,<br />
-                а также тюбинговая горка.
-              </p>
+              <div class="xs:min-w-[120px]">Наименование</div>
+              <div class="xs:min-w-[120px]">Дни</div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей 1 час
+              </div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей 2 часа
+              </div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей 3 часа
+              </div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей день
+              </div>
             </div>
-          </div>
-          <div
-            class="relative overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-h-[auto] bg-[url('/images/photo2.jpg')] bg-no-repeat bg-center bg-cover"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <div
-              class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4"
-            >
-              <h3
-                class="font-black w-full xss:w-[80%] text-[20px] xs:text-[24px] xss:text-[28px] md:text-[40px] leading-[110%] text-white font-inter"
+            <div class="grid grid-cols-6 xs:min-w-[1078px]">
+              <div
+                class="flex items-center justify-center row-span-3 bg-[#f9fafb] p-4 xs:min-w-[120px]"
               >
-                30 декабря<br />
-                в ЦАО "Евразия"<br />
-                состоится тестовое<br />
-                открытие 2 склона.
-              </h3>
-              <p
-                class="font-normal text-base xs:text-lg xss:text-xl md:text-2xl leading-[120%] text-white font-inter"
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-8 h-8 bg-[rgba(0,147,221,0.3)] rounded-full"
+                  ></div>
+                  <span class="font-medium text-xs text-[#101828] font-inter"
+                    >Ватрушка (тюбинг)</span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-4 font-normal text-xs text-[#667085] xs:min-w-[120px]"
               >
-                К новогодним праздникам уже подготовлено<br />
-                5 больших склонов и учебная трасса,<br />
-                а также тюбинговая горка.
-              </p>
-            </div>
-          </div>
-          <div
-            class="relative overflow-hidden rounded-[20px] mt-[30px] shadow-lg w-full h-auto xss:h-[406px]"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <img
-              src="./images/photo_2025-09-29_12-30-35.jpg"
-              alt="Новогодняя программа"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute inset-0 bg-black opacity-20"></div>
-            <div class="relative z-10 p-4 xs:p-6 flex items-end"></div>
-          </div>
-          <div
-            class="relative overflow-hidden rounded-[20px] shadow-lg mt-[30px] w-full h-auto xss:h-[406px] bg-[url('/images/photo3.jpg')] bg-no-repeat bg-center bg-cover"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <div
-              class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4"
-            >
-              <h3
-                class="font-black w-full xss:w-[80%] text-[20px] xs:text-[24px] xss:text-[28px] md:text-[40px] leading-[110%] text-white font-inter"
+                Будни
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
               >
-                BBQ площадки
-              </h3>
+                100
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                150
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                200
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                300
+              </div>
+              <div
+                class="p-4 font-normal text-xs text-[#667085] xs:min-w-[120px]"
+              >
+                Выходные
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                150
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                200
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                300
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                450
+              </div>
+              <div
+                class="p-4 font-normal text-xs text-[#667085] xs:min-w-[120px]"
+              >
+                Праздничные
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                200
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                300
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                400
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                600
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        class="p-4 xs:p-5 max-w-[640px] mx-auto w-[90%] sm:hidden"
+        class="max-w-[1440px] mx-auto w-[80%] mt-[40px]"
         data-aos="fade-up"
+        data-aos-duration="700"
       >
+        <h1
+          class="font-semibold text-base leading-[91%] w-[80%] mx-auto text-center text-[#0093dd] font-inter"
+        >
+          Администрация ЦАО "Евразия" не несет ответственности за возможные
+          травмы, полученные в результате катания по тюбинговой трассе на личном
+          инвентаре.
+        </h1>
         <h2
-          class="font-black text-xl xs:text-2xl xss:text-3xl leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter"
+          class="font-semibold mt-[30px] text-4xl leading-[122%] tracking-[-0.02em] text-center text-[#101828] font-inter"
         >
-          Акции и спец предложения
+          Уважаемые гости!
         </h2>
-        <div
-          class="mt-6 xs:mt-8 overflow-hidden relative p-4 xs:p-5 bg-[url('/images/Mask.svg')] bg-no-repeat bg-center bg-cover w-full h-[320px] rounded-[30px] flex flex-col items-center justify-between"
-          data-aos="fade-right"
-          data-aos-delay="100"
+        <p
+          class="font-normal w-full sm:w-[60%] mt-[20px] mx-auto text-xl leading-[150%] text-center text-[#667085] font-inter"
         >
-          <div class="absolute inset-0 bg-black opacity-40"></div>
-          <div class="relative z-10 text-center space-y-2 xs:space-y-3">
-            <h1
-              class="font-black text-lg xs:text-xl xss:text-2xl leading-[100%] tracking-[-0.04em] text-white font-inter"
-            >
-              Евробус - экспресс
-            </h1>
-            <h1
-              class="font-black text-lg xs:text-xl xss:text-2xl leading-[100%] tracking-[-0.04em] text-white font-inter"
-            >
-              челябинск-куса
-            </h1>
-            <p
-              class="font-normal text-base xs:text-lg leading-[100%] tracking-[-0.04em] text-white font-inter"
-            >
-              за 3 часа
-            </p>
-          </div>
-          <div class="relative z-10 w-full">
-            <button
-              class="bg-[#0093dd] mt-[20px] hover:bg-blue-600 w-full py-3 xs:py-4 rounded-[10px] font-medium text-sm xs:text-base text-white font-inter"
-            >
-              Заказать
-            </button>
-          </div>
-        </div>
-        <div
-          class="mt-6 xs:mt-8 overflow-hidden relative p-4 xs:p-5 bg-[url('/images/Group.svg')] bg-no-repeat bg-center bg-cover w-full h-[320px] rounded-[30px] flex flex-col items-center justify-between"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        >
-          <div class="absolute inset-0 bg-black opacity-40"></div>
-          <div class="relative z-10 text-start space-y-2 xs:space-y-3">
-            <h1
-              class="font-black text-lg xs:text-xl xss:text-2xl leading-[100%] tracking-[-0.04em] text-white font-inter"
-            >
-              Снежные будни
-            </h1>
-            <h1
-              class="font-black text-sm xs:text-base xss:text-lg leading-[100%] tracking-[-0.04em] text-white font-inter"
-            >
-              прокат снаряжения + кресельный подъёмник
-            </h1>
-            <p
-              class="font-normal text-xs xs:text-sm leading-[100%] tracking-[-0.04em] text-white font-inter"
-            >
-              с понедельника по пятницу
-            </p>
-            <div class="mt-2">
-              <p
-                class="font-black text-2xl xs:text-3xl xss:text-4xl leading-[100%] tracking-[-0.04em] uppercase text-white font-inter"
+          Чтобы воспользоваться прокатом снаряжения, необходим залог (документ
+          удостоверяющий личность: паспорт или водительское удостоверение).
+        </p>
+        <div class="xs:flex-col xs:items-stretch overflow-x-hidden">
+          <div
+            class="items-center md:flex hidden mt-[30px] bg-[#fff] justify-between border p-4 rounded-lg border-solid border-[#eaecf0]"
+          >
+            <div class="w-[35%]">
+              <h1
+                class="font-medium text-sm leading-[143%] text-[#344054] font-inter"
               >
-                1400
-                <span
-                  class="font-normal text-xs xs:text-sm leading-[100%] tracking-[-0.04em] text-white font-inter"
-                >
-                  руб.</span
-                >
+                Правила катания на сноутюбинге (ватрушке)
+              </h1>
+              <p
+                class="font-medium mt-[20px] text-[10px] leading-[125%] text-[#667085] font-inter"
+              >
+                При оплате любой услуги ЦАО "Евразия" вы подтверждаете
+                ознакомление и соглашаетесь с данными правилами. Администрация
+                ЦАО "Евразия" не несет ответственности за полученные травмы или
+                порчу имущества своих гостей при нарушении данных правил.
               </p>
-              <p
-                class="font-black text-2xl xs:text-3xl xss:text-4xl leading-[100%] tracking-[-0.04em] uppercase text-white font-inter mt-1"
+            </div>
+            <div>
+              <button
+                class="font-medium text-base text-center text-[#535050] hover:text-[#0093dd] font-inter border flex items-center justify-center cursor-pointer w-full max-w-[172px] h-[37px] pl-[50px] pr-[52px] py-[15px] rounded-[20px] border-solid border-[#0093dd]"
               >
-                4
-                <span
-                  class="font-normal text-xs xs:text-sm leading-[100%] tracking-[-0.04em] text-white font-inter"
-                >
-                  часа</span
-                >
+                Ознакомиться
+              </button>
+            </div>
+          </div>
+          <div
+            class="items-start md:hidden flex flex-col mt-[30px] bg-[#fff] justify-between border p-4 rounded-lg border-solid border-[#eaecf0]"
+          >
+            <div
+              class="xsss:flex-row flex flex-col items-center xsss:text-start text-center gap-[20px]"
+            >
+              <h1
+                class="font-medium text-sm leading-[143%] text-[#344054] font-inter"
+              >
+                Правила катания на сноутюбинге (ватрушке)
+              </h1>
+              <button
+                class="font-medium text-base w-[50%] xs:w-full text-center text-[#535050] hover:text-[#0093dd] font-inter border flex items-center justify-center cursor-pointer h-[37px] px-4 py-[10px] rounded-[20px] border-solid border-[#0093dd]"
+              >
+                Ознакомиться
+              </button>
+            </div>
+            <div class="w-full">
+              <p
+                class="font-medium mt-[10px] text-[10px] leading-[125%] text-[#667085] font-inter"
+              >
+                При оплате любой услуги ЦАО "Евразия" вы подтверждаете
+                ознакомление и соглашаетесь с данными правилами. Администрация
+                ЦАО "Евразия" не несет ответственности за полученные травмы или
+                порчу имущества своих гостей при нарушении данных правил.
               </p>
             </div>
           </div>
-          <div class="relative z-10 w-full mt-4">
-            <button
-              class="bg-[#0093dd] hover:bg-blue-600 w-full py-3 xs:py-4 rounded-[10px] font-medium text-sm xs:text-base text-white font-inter"
-            >
-              Заказать
-            </button>
-          </div>
         </div>
       </section>
 
       <section
-        class="events-section py-8 xs:py-10 md:py-12 max-w-[1440px] mx-auto w-[80%]"
+        class="max-w-[1440px] mx-auto mt-10 w-[90%] overflow-hidden mb-[30px]"
         data-aos="fade-up"
+        data-aos-delay="200"
       >
-        <div
-          class="sm:flex hidden flex-col xs:flex-row items-start xs:items-center justify-between gap-4 xs:gap-0 p-0 xs:p-[0_20px_0_0px] max-w-[1440px] mx-auto mb-6 xs:mb-8"
-        >
-          <h2
-            class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] text-[#0093dd] font-inter"
-          >
-            Афиша
-          </h2>
-          <button
-            class="bg-[#0093dd] cursor-pointer hover:bg-blue-600 px-4 xs:pl-[50px] xs:pr-[52px] py-3 xs:py-[15px] rounded-[10px] font-medium text-sm xs:text-base text-white font-inter whitespace-nowrap"
-          >
-            Посмотреть все
-          </button>
-        </div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[1440px] mx-auto"
-        >
+        <div class="myslider flex">
           <div
-            class="relative sm:block hidden overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-[406px]"
-            data-aos="flip-right"
-            data-aos-delay="100"
+            class="flex-shrink-0 w-[300px] lg:w-[300px] md:w-[242px] xs:w-[180px] xss:w-[140px] mr-4"
           >
-            <img
-              src="./images/photo_2025-09-30_07-39-48.jpg"
-              alt="Кубок Уральских Гор"
-              class="w-full h-full object-cover"
-            />
+            <img src="./images/Image.png" alt="" class="w-full" />
           </div>
           <div
-            class="relative overflow-hidden sm:hidden rounded-[20px] shadow-lg w-full h-auto xss:h-[406px]"
-            data-aos="flip-right"
-            data-aos-delay="100"
+            class="flex-shrink-0 w-[300px] lg:w-[300px] md:w-[242px] xs:w-[180px] xss:w-[140px] mr-4"
           >
-            <img
-              src="./images/Group 5713.svg"
-              alt="Кубок Уральских Гор"
-              class="w-full h-full object-cover"
-            />
+            <img src="./images/Image (1).png" alt="" class="w-full" />
           </div>
           <div
-            class="relative sm:block hidden overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-[406px]"
-            data-aos="flip-right"
-            data-aos-delay="200"
+            class="flex-shrink-0 w-[300px] lg:w-[300px] md:w-[242px] xs:w-[180px] xss:w-[140px] mr-4"
           >
-            <img
-              src="./images/Mask2.svg"
-              alt="Чемпионат Челябинской области"
-              class="w-full h-full object-cover"
-            />
+            <img src="./images/Image.png" alt="" class="w-full" />
           </div>
           <div
-            class="relative sm:hidden overflow-hidden rounded-[20px] shadow-lg w-full h-auto xss:h-[406px]"
-            data-aos="flip-right"
-            data-aos-delay="100"
+            class="flex-shrink-0 w-[300px] lg:w-[300px] md:w-[242px] xs:w-[180px] xss:w-[140px] mr-4"
           >
-            <img
-              src="./images/Group 5714.svg"
-              alt="Чемпионат Челябинской области"
-              class="w-full h-full object-cover"
-            />
+            <img src="./images/Image (1).png" alt="" class="w-full" />
           </div>
         </div>
       </section>
 
       <section
-        class="max-w-[1440px] w-[80%] mx-auto py-8 xs:py-10 md:py-12"
-        data-aos="fade-up"
-      >
-        <div
-          class="flex flex-col xs:flex-row items-start xs:items-center justify-between max-w-[1440px] p-0 xs:p-[0_20px_0_0px] mx-auto mb-6 xs:mb-8 gap-4 xs:gap-0"
-        >
-          <h2
-            class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter"
-          >
-            Новости
-          </h2>
-          <button
-            class="bg-[#0093dd] sm:block hidden cursor-pointer hover:bg-blue-600 px-4 xs:pl-[50px] xs:pr-[52px] py-3 xs:py-[15px] rounded-[10px] font-medium text-sm xs:text-base text-white font-inter whitespace-nowrap"
-          >
-            Посмотреть все
-          </button>
-        </div>
-        <div
-          class="grid grid-cols-1 xss:grid-cols-2 gap-6 max-w-[1440px] mx-auto"
-        >
-          <div
-            class="relative overflow-hidden rounded-[20px] shadow-lg w-full h-[320px] xss:h-[406px] bg-[url('/images/friends2.jpg')] bg-no-repeat bg-center bg-cover"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <div
-              class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4"
-            >
-              <h3
-                class="font-black w-full xss:w-[100%] text-[20px] xs:text-[24px] xss:text-[24px] md:text-[40px] leading-[110%] text-white font-inter"
-              >
-                Состоялось первенство России по сноуборду в дисциплине Big-Air
-              </h3>
-            </div>
-          </div>
-          <div
-            class="relative overflow-hidden rounded-[20px] shadow-lg w-full h-[320px] xss:h-[406px] bg-[url('/images/Mask3.svg')] bg-no-repeat bg-center bg-cover"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <div
-              class="relative z-10 p-4 xs:p-6 text-white space-y-3 xs:space-y-4"
-            >
-              <h3
-                class="font-black w-full xss:w-[60%] text-[20px] xs:text-[24px] xss:text-[20px] lg:text-[40px] md:text-[30px] sm:text-[22px] leading-[110%] text-white font-inter"
-              >
-                Всероссийские соревнования по сноуборду в городе Куса
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="flex max-w-[1440px] w-[80%] mx-auto items-center justify-center mt-0 xss:mt-8 md:mt-[30px] mb-0 xss:mb-8 md:mb-[30px] gap-2 xs:gap-[8px]"
+        class="flex max-w-[1440px] w-[80%] mx-auto items-center justify-center mt-0 xss:mt-8 md:mt-[50px] mb-0 xss:mb-8 md:mb-[30px] gap-2 xs:gap-[8px]"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -1624,12 +1530,29 @@
       });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script>
       AOS.init({
         duration: 800,
         easing: "ease-out-cubic",
         once: true,
         offset: 100,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".myslider").slick({
+          infinite: true,
+          variableWidth: true,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 0,
+          speed: 4000,
+          cssEase: "linear",
+          arrows: false,
+          dots: false,
+        });
       });
     </script>
   </body>
