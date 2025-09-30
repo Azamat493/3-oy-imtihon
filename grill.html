@@ -40,16 +40,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
-  <body class="bg-[#fff]">
+  <body>
     <header
       class="header bg-white border-b sticky top-0 z-[999] border-gray-200"
     >
@@ -111,18 +104,14 @@
         <nav
           class="flex items-center gap-6 font-normal text-lg text-black font-inter xs:hidden md:flex"
         >
-          <a href="./index.html" class="text-black hover:text-blue-600"
-            >Курорт</a
-          >
+          <a href="./index.html" class="text-black hover:text-blue-600">Курорт</a>
           <a href="./habitation.html" class="text-black hover:text-blue-600"
             >Проживание</a
           >
-          <a
-            href="./track.html"
-            class="text-black hover:text-blue-600 whitespace-nowrap"
+          <a href="./track.html" class="text-black hover:text-blue-600 whitespace-nowrap"
             >Услуги и тарифы</a
           >
-          <a href="./grill.html" class="text-black hover:text-blue-600">Афиша</a>
+          <a href="#" class="text-black hover:text-blue-600">Афиша</a>
           <a href="#" class="text-black hover:text-blue-600 whitespace-nowrap"
             >Для бизнеса</a
           >
@@ -208,7 +197,7 @@
                 >Курорт</a
               >
               <a
-                href="#"
+                href="./habitation.html"
                 class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
                 >Проживание</a
               >
@@ -218,7 +207,7 @@
                 >Услуги и тарифы</a
               >
               <a
-                href="./grill.html"
+                href="#"
                 class="block px-4 py-2 rounded-md text-white hover:text-[#353333c1] transition"
                 >Афиша</a
               >
@@ -279,30 +268,29 @@
       </div>
     </header>
     <main>
-      <section>
+         <section>
         <div class="swiper w-[80%] max-w-[1440px] mx-auto">
           <div class="swiper-wrapper">
             <div
-              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/friends.svg')] bg-no-repeat bg-center bg-cover"
-              data-aos="fade-up"
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/grilled.svg')] bg-no-repeat bg-center bg-cover" data-aos="fade-up"
             >
               <div class="absolute inset-0 bg-[black] opacity-40"></div>
-
               <div
                 class="relative z-10 flex flex-col md:flex-row items-end justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
               >
-                <div class="w-full md:w-[34%] mb-6 md:mb-0">
+                <div class="w-full md:w-[51%] mb-6 md:mb-0">
                   <h2
                     class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
                   >
-                    Отели ЦАО Евразия
+                    BBQ площадки
                   </h2>
                   <p
                     class="w-full xss:w-[90%] md:w-[80%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
                   >
-                    Найдите и забронируйте подходящий для Вас отель на
-                    официальном сайте Евразии. Широкий выбор отелей по всему
-                    курорту и самые низкие цены гарантированы
+                    На ЦАО "Евразия" вы всегда сможете отдохнуть большой
+                    компанией в аренах BBQ . Что может быть лучше сочетания
+                    активного отдыха в отличной компании и BBQ собствественного
+                    приготовления?
                   </p>
                 </div>
                 <div
@@ -401,9 +389,10 @@
               </div>
             </div>
             <div
-              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/shut.svg')] bg-no-repeat bg-center bg-cover"
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/shut.svg')] bg-no-repeat bg-center bg-cover"            
             >
               <div class="absolute inset-0 bg-black opacity-40"></div>
+
               <div
                 class="relative z-10 flex flex-col md:flex-row items-start justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
               >
@@ -521,6 +510,7 @@
               class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/back.svg')] bg-no-repeat bg-center bg-cover"
             >
               <div class="absolute inset-0 bg-black opacity-40"></div>
+
               <div
                 class="relative z-10 flex flex-col md:flex-row items-end justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
               >
@@ -635,26 +625,25 @@
               </div>
             </div>
             <div
-              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/grilled.svg')] bg-no-repeat bg-center bg-cover"
+              class="relative swiper-slide max-w-[1440px] mx-auto w-[80%] overflow-hidden rounded-[30px] bg-[url('/images/friends.svg')] bg-no-repeat bg-center bg-cover"
             >
               <div class="absolute inset-0 bg-[black] opacity-40"></div>
 
               <div
                 class="relative z-10 flex flex-col md:flex-row items-end justify-between p-6 xs:p-4 xss:p-6 md:p-10 lg:p-12 max-w-[1440px] mx-auto"
               >
-                <div class="w-full md:w-[51%] mb-6 md:mb-0">
+                <div class="w-full md:w-[34%] mb-6 md:mb-0">
                   <h2
                     class="font-black text-[28px] xs:text-[32px] xss:text-[36px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-white font-inter"
                   >
-                    BBQ площадки
+                    Отели ЦАО Евразия
                   </h2>
                   <p
                     class="w-full xss:w-[90%] md:w-[80%] mt-4 xs:mt-5 md:mt-[30px] font-medium text-base xs:text-lg xss:text-xl md:text-lg leading-[140%] tracking-[-0.04em] text-white font-inter"
                   >
-                    На ЦАО "Евразия" вы всегда сможете отдохнуть большой
-                    компанией в аренах BBQ . Что может быть лучше сочетания
-                    активного отдыха в отличной компании и BBQ собствественного
-                    приготовления?
+                    Найдите и забронируйте подходящий для Вас отель на
+                    официальном сайте Евразии. Широкий выбор отелей по всему
+                    курорту и самые низкие цены гарантированы
                   </p>
                 </div>
                 <div
@@ -733,6 +722,7 @@
                   >
                     Сегодня, sunday 15 января
                   </div>
+
                   <div
                     class="mt-2 xss:mt-[10px] pt-2 xss:pt-3 border-t border-gray-200"
                   >
@@ -758,642 +748,127 @@
         </div>
       </section>
 
-      <section class="max-w-[1440px] mx-auto w-[80%] mt-10 px-4">
-        <h2
-          class="font-black text-[30px] xsss:text-[40px] leading-[130%] tracking-[-0.04em] text-[#0093dd] font-inter mb-6"
-          data-aos="fade-up"
-        >
-          Проживание в ЦАО "Евразия"
-        </h2>
-        <div
-          class="flex flex-col md:flex-row items-start gap-8 md:items-start"
-          data-aos="fade-up"
-        >
-          <div class="flex-shrink-0 w-full md:w-auto">
-            <img
-              src="./images/Image (2).png"
-              alt="Гость в номере"
-              class="rounded-lg w-full md:w-auto"
-            />
-          </div>
-          <div class="flex flex-col justify-between w-full">
-            <div>
-              <p
-                class="font-semibold text-sm leading-[143%] lowercase text-[#0093dd] font-inter mb-2"
-              >
-                10 минут на автобусе или автомобиле
-              </p>
-              <h3
-                class="font-semibold text-lg leading-[156%] text-[#101828] font-inter mb-3"
-              >
-                КОРПУС "ГОРОД"
-              </h3>
-              <p
-                class="font-normal text-base leading-[150%] text-[#667085] font-inter mb-4"
-              >
-                Гости размещаются по 2,3 и 4 человека в номере. В каждой комнате
-                2,3 кровати, 1,5 спальные (в 4-х местном номере 2 двухъярусные
-                кровати), большой шкаф, прихожая. В каждом номер - душ,
-                раковина, санузел. Корпус "Город" расположен в 10 минутах от
-                территории в городе Куса, ул. Декабристов, дом 9. Доставка
-                осуществляется на 35-местном автобусе утром, днем и вечером.
-              </p>
-            </div>
-            <button
-              class="flex md:h-[54px] md:w-[258px] cursor-pointer items-center justify-center bg-[#0093dd] hover:bg-blue-600 font-medium text-base text-white font-inter py-2 px-6 rounded-[10px] self-start md:self-start"
+        <section class="max-w-[1440px] mx-auto w-[80%]">
+        <div class="px-4 py-8" data-aos="fade-up" data-aos-duration="700">
+          <h2
+            class=" font-semibold text-4xl leading-[122%] tracking-[-0.02em] capitalize text-center text-[#101828] font-inter mb-6"
+          >
+            Стоимость АРЕНДЫ МАНГАЛЬНОЙ ЗОНЫ
+          </h2>
+          <div
+            class="font-medium text-xs leading-[150%] text-[#667085] font-inter overflow-hidden overflow-x-auto"
+          >
+            <div
+              class="grid grid-cols-6 gap-4 p-4 border-b border-gray-200 min-w-[1078px]"
             >
-              Забронировать
-            </button>
+              <div class="xs:min-w-[120px]">Наименование</div>
+              <div class="xs:min-w-[120px]">Дни</div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей 1 час
+              </div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей 2 часа
+              </div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей 3 часа
+              </div>
+              <div class="xs:min-w-[120px]">
+                Стоимость проката,<br />рублей день
+              </div>
+            </div>
+            <div class="grid grid-cols-6 xs:min-w-[1078px]">
+              <div
+                class="flex items-center justify-center row-span-3 bg-[#f9fafb] p-4 xs:min-w-[120px]"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-8 h-8 bg-[rgba(0,147,221,0.3)] rounded-full"
+                  ></div>
+                  <span class="font-medium text-xs text-[#101828] font-inter"
+                    >Ватрушка (тюбинг)</span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-4 font-normal text-xs text-[#667085] xs:min-w-[120px]"
+              >
+                Будни
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                100
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                150
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                200
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                300
+              </div>
+              <div
+                class="p-4 font-normal text-xs text-[#667085] xs:min-w-[120px]"
+              >
+                Выходные
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                150
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                200
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                300
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                450
+              </div>
+              <div
+                class="p-4 font-normal text-xs text-[#667085] xs:min-w-[120px]"
+              >
+                Праздничные
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                200
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                300
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                400
+              </div>
+              <div
+                class="p-4 font-normal text-sm text-[#667085] xs:min-w-[120px]"
+              >
+                600
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="flex flex-col md:flex-row items-start gap-8 md:items-start mt-[50px]"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="flex-shrink-0 w-full md:w-auto">
-            <img
-              src="./images/Image (3).png"
-              alt="Гость в номере"
-              class="rounded-lg w-full md:w-auto"
-            />
-          </div>
-          <div class="flex flex-col justify-between w-full">
-            <div>
-              <p
-                class="font-semibold text-sm leading-[143%] lowercase text-[#0093dd] font-inter mb-2"
-              >
-                600 МЕТРОВ ОТ ПОДЪЕМНИКА
-              </p>
-              <h3
-                class="font-semibold text-lg leading-[156%] text-[#101828] font-inter mb-3"
-              >
-                КОРПУС "ГОРНЫЙ”
-              </h3>
-              <p
-                class="font-normal text-base leading-[150%] text-[#667085] font-inter mb-4"
-              >
-                В гостиничном комплексе (600 метров от подъемника и сервисного
-                здания) мы можем предложить размещение в 54 двухместных, 12
-                одноместных и 12 спортивных номерах.
-              </p>
-            </div>
-            <button
-              class="flex md:h-[54px] md:w-[258px] md:mt-[40px] cursor-pointer items-center justify-center bg-[#0093dd] hover:bg-blue-600 font-medium text-base text-white font-inter py-2 px-6 rounded-[10px] self-start"
-            >
-              Забронировать
-            </button>
-          </div>
-        </div>
-        <div
-          class="flex flex-col md:flex-row items-start gap-8 md:items-start mt-[50px]"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div class="flex-shrink-0 w-full md:w-auto">
-            <img
-              src="./images/Image (4).png"
-              alt="Гость в номере"
-              class="rounded-lg w-full md:w-auto"
-            />
-          </div>
-          <div class="flex flex-col justify-between w-full">
-            <div>
-              <p
-                class="font-semibold text-sm leading-[143%] lowercase text-[#0093dd] font-inter mb-2"
-              >
-                ГОСТЕВОЙ ДОМИК, 2 КИЛОМЕТРА ОТ ПОДЪЕМНИКА
-              </p>
-              <h3
-                class="font-semibold text-lg leading-[156%] text-[#101828] font-inter mb-3"
-              >
-                КОРПУС "ЛЕСНОЙ"
-              </h3>
-              <p
-                class="font-normal text-base leading-[150%] text-[#667085] font-inter mb-4"
-              >
-                Также для размещения предлагается гостевой домик (2 км от
-                подъемника и сервисного здания) для компаний до 16 человек.
-              </p>
-            </div>
-            <button
-              class="flex md:w-[258px] md:h-[54px] md:mt-[40px] cursor-pointer items-center justify-center bg-[#0093dd] hover:bg-blue-600 font-medium text-base text-white font-inter py-2 px-6 rounded-[10px] self-start"
-            >
-              Забронировать
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="p-[20px] mt-[50px] max-w-[1440px] mx-auto w-[80%] px-4">
-        <h1
-          class="font-semibold mb-[20px] text-base xs:text-sm leading-[150%] text-center text-[#0093dd] font-inter"
-          data-aos="fade-up"
-        >
-          Заселение в гостиницу производится только при предъявлении паспорта.
-        </h1>
-        <h3
-          class="font-semibold w-full xss:w-[55%] max-w-full mx-auto mb-[20px] text-4xl xs:text-2xl sm:text-3xl leading-[122%] tracking-[-0.02em] text-center text-[#101828] font-inter"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          Обращаем Ваше внимание на то, что для постояльцев гостиницы действуют
-          специальные тарифы на ски-пасс.
-        </h3>
-        <p
-          class="font-normal text-xl xs:text-lg text-center text-[#667085] font-inter"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          Бронирование осуществляется по предоплате.
-        </p>
-      </section>
-
-      <section
-        class="flex max-w-[1440px] w-[80%] mx-auto items-center justify-center mt-0 xss:mt-8 md:mt-[30px] mb-0 xss:mb-8 md:mb-[30px] gap-2 xs:gap-[8px]"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <a href="https://m.vk.com/" target="_blank" rel="noopener noreferrer">
-          <img
-            src="./images/Group 26.svg"
-            alt="ВКонтакте"
-            class="w-[44px] h-[44px] xss:w-full xss:h-auto transition-transform duration-300 hover:scale-110"
-          />
-        </a>
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="./images/Group 25.svg"
-            alt="YouTube"
-            class="w-[44px] h-[44px] xss:w-full xss:h-auto transition-transform duration-300 hover:scale-110"
-          />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/images/Group 24.jpg"
-            alt=""
-            class="w-[44px] h-[44px] xss:w-full xss:h-auto transition-transform duration-300 hover:scale-110"
-          />
-        </a>
       </section>
     </main>
-    <footer
-      class="footer bg-[#d9d9d9] p-[20px_40px_40px_40px] xss:block hidden"
-      data-aos="fade-up"
-    >
-      <div
-        class="max-w-[1440px] mx-auto w-[83%] flex flex-col md:flex-col lg:flex-row items-start xs:items-center justify-between px-6 gap-4 xs:gap-6"
-      >
-        <div class="flex items-center gap-2">
-          <img src="./images/Group 5729.svg" alt="Логотип Евразия" class="" />
-        </div>
-        <div
-          class="flex flex-col xss:flex-col sm:flex-row xs:flex-row items-start xs:items-center gap-3 font-normal text-lg text-[#535050] font-inter"
-        >
-          <span class="whitespace-nowrap">Схема проезда</span>
-          <div class="flex items-center">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.36732 9.96665L6.13398 11.2C5.87398 11.46 5.46065 11.46 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.3 3.66732 9.57331 3.11398 8.81331C2.56732 8.05331 2.12732 7.29331 1.80732 6.53998C1.49398 5.77998 1.33398 5.05331 1.33398 4.35998C1.33398 3.90665 1.41398 3.47331 1.57398 3.07331C1.73398 2.66665 1.98732 2.29331 2.34065 1.95998C2.76732 1.53998 3.23398 1.33331 3.72732 1.33331C3.91398 1.33331 4.10065 1.37331 4.26732 1.45331C4.44065 1.53331 4.59398 1.65331 4.71398 1.82665L6.26065 4.00665C6.38065 4.17331 6.46732 4.32665 6.52732 4.47331C6.58732 4.61331 6.62065 4.75331 6.62065 4.87998C6.62065 5.03998 6.57398 5.19998 6.48065 5.35331C6.39398 5.50665 6.26732 5.66665 6.10732 5.82665L5.60065 6.35331C5.52732 6.42665 5.49398 6.51331 5.49398 6.61998C5.49398 6.67331 5.50065 6.71998 5.51398 6.77331C5.53398 6.82665 5.55398 6.86665 5.56732 6.90665C5.68732 7.12665 5.89398 7.41331 6.18732 7.75998C6.48732 8.10665 6.80732 8.45998 7.15398 8.81331C7.22065 8.87998 7.29398 8.94665 7.36065 9.01331C7.62732 9.27331 7.63398 9.69998 7.36732 9.96665Z"
-                fill="#535050"
-              />
-              <path
-                d="M14.6471 12.22C14.6471 12.4067 14.6137 12.6 14.5471 12.7867C14.5271 12.84 14.5071 12.8933 14.4804 12.9467C14.3671 13.1867 14.2204 13.4133 14.0271 13.6267C13.7004 13.9867 13.3404 14.2467 12.9337 14.4133C12.9271 14.4133 12.9204 14.42 12.9137 14.42C12.5204 14.58 12.0937 14.6667 11.6337 14.6667C10.9537 14.6667 10.2271 14.5067 9.46039 14.18C8.69372 13.8533 7.92706 13.4133 7.16706 12.86C6.90706 12.6667 6.64706 12.4733 6.40039 12.2667L8.58039 10.0867C8.76706 10.2267 8.93372 10.3333 9.07372 10.4067C9.10706 10.42 9.14706 10.44 9.19372 10.46C9.24706 10.48 9.30039 10.4867 9.36039 10.4867C9.47372 10.4867 9.56039 10.4467 9.63372 10.3733L10.1404 9.87332C10.3071 9.70665 10.4671 9.57999 10.6204 9.49999C10.7737 9.40665 10.9271 9.35999 11.0937 9.35999C11.2204 9.35999 11.3537 9.38665 11.5004 9.44665C11.6471 9.50665 11.8004 9.59332 11.9671 9.70665L14.1737 11.2733C14.3471 11.3933 14.4671 11.5333 14.5404 11.7C14.6071 11.8667 14.6471 12.0333 14.6471 12.22Z"
-                fill="#535050"
-              />
-            </svg>
-            <a href="#" class="">+79227288288</a>
-          </div>
-          <div class="flex items-center">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.36732 9.96665L6.13398 11.2C5.87398 11.46 5.46065 11.46 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.3 3.66732 9.57331 3.11398 8.81331C2.56732 8.05331 2.12732 7.29331 1.80732 6.53998C1.49398 5.77998 1.33398 5.05331 1.33398 4.35998C1.33398 3.90665 1.41398 3.47331 1.57398 3.07331C1.73398 2.66665 1.98732 2.29331 2.34065 1.95998C2.76732 1.53998 3.23398 1.33331 3.72732 1.33331C3.91398 1.33331 4.10065 1.37331 4.26732 1.45331C4.44065 1.53331 4.59398 1.65331 4.71398 1.82665L6.26065 4.00665C6.38065 4.17331 6.46732 4.32665 6.52732 4.47331C6.58732 4.61331 6.62065 4.75331 6.62065 4.87998C6.62065 5.03998 6.57398 5.19998 6.48065 5.35331C6.39398 5.50665 6.26732 5.66665 6.10732 5.82665L5.60065 6.35331C5.52732 6.42665 5.49398 6.51331 5.49398 6.61998C5.49398 6.67331 5.50065 6.71998 5.51398 6.77331C5.53398 6.82665 5.55398 6.86665 5.56732 6.90665C5.68732 7.12665 5.89398 7.41331 6.18732 7.75998C6.48732 8.10665 6.80732 8.45998 7.15398 8.81331C7.22065 8.87998 7.29398 8.94665 7.36065 9.01331C7.62732 9.27331 7.63398 9.69998 7.36732 9.96665Z"
-                fill="#535050"
-              />
-              <path
-                d="M14.6471 12.22C14.6471 12.4067 14.6137 12.6 14.5471 12.7867C14.5271 12.84 14.5071 12.8933 14.4804 12.9467C14.3671 13.1867 14.2204 13.4133 14.0271 13.6267C13.7004 13.9867 13.3404 14.2467 12.9337 14.4133C12.9271 14.4133 12.9204 14.42 12.9137 14.42C12.5204 14.58 12.0937 14.6667 11.6337 14.6667C10.9537 14.6667 10.2271 14.5067 9.46039 14.18C8.69372 13.8533 7.92706 13.4133 7.16706 12.86C6.90706 12.6667 6.64706 12.4733 6.40039 12.2667L8.58039 10.0867C8.76706 10.2267 8.93372 10.3333 9.07372 10.4067C9.10706 10.42 9.14706 10.44 9.19372 10.46C9.24706 10.48 9.30039 10.4867 9.36039 10.4867C9.47372 10.4867 9.56039 10.4467 9.63372 10.3733L10.1404 9.87332C10.3071 9.70665 10.4671 9.57999 10.6204 9.49999C10.7737 9.40665 10.9271 9.35999 11.0937 9.35999C11.2204 9.35999 11.3537 9.38665 11.5004 9.44665C11.6471 9.50665 11.8004 9.59332 11.9671 9.70665L14.1737 11.2733C14.3471 11.3933 14.4671 11.5333 14.5404 11.7C14.6071 11.8667 14.6471 12.0333 14.6471 12.22Z"
-                fill="#535050"
-              />
-            </svg>
-            <a href="#" class="">+73513790979</a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="max-w-[1440px] mx-auto w-[83%] mt-10 px-6 grid grid-cols-1 xss:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-      >
-        <div>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg text-black hover:text-blue-600 font-inter"
-                >Услуги</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg text-black hover:text-blue-600 font-inter"
-                >Трассы</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg text-black hover:text-blue-600 font-inter"
-                >Кафе</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg text-black hover:text-blue-600 font-inter"
-                >Гостиница</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg text-black hover:text-blue-600 font-inter"
-                >О комплексе</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Новости</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Тарифы</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Прокат</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Акции и туры</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Цены на услуги</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Схема проезда</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Туры</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Проживание</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Забронировать номер</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Детям</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Акции</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Веб-камеры</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg text-[#535050] font-inter mb-4">
-            Режим работы:
-          </h3>
-          <p class="font-normal text-lg text-[#535050] font-inter">
-            Пн-пт: 10.00–21.00
-          </p>
-          <p class="font-normal text-lg text-[#535050] font-inter">
-            Сб-вс: 9.00–21.00
-          </p>
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg text-[#535050] font-inter mb-4">
-            Контакты
-          </h3>
-          <p class="font-normal text-xs text-[#535050] font-inter">
-            Всесезонный центр<br />
-            спорта и отдыха - <br />
-            находится в <br />
-            рекреационной зоне на <br />
-            границе с заповедниками <br />
-            «Таганай» и «Зюраткуль» <br />
-            всего в 30 минутах езды <br />
-            от Златоуста, и в 1,5 часах <br />
-            от Челябинска.
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <footer
-      class="footer bg-[#d9d9d9] p-[16px_16px] xsss:p-[20px_20px] block mt-6 xsss:mt-[30px] xss:hidden"
-      data-aos="fade-up"
-    >
-      <div
-        class="flex flex-col xsss:flex-row items-center justify-between gap-3 xsss:gap-[20px]"
-      >
-        <div class="flex items-center gap-2">
-          <img
-            src="./images/Group 5729.svg"
-            alt="Логотип Евразия"
-            class="w-[80%]"
-          />
-        </div>
-        <div class="text-center xsss:text-left mt-3 xsss:mt-0">
-          <h3
-            class="font-semibold text-base xsss:text-lg text-[#535050] font-inter whitespace-nowrap"
-          >
-            Режим работы:
-          </h3>
-          <p
-            class="font-normal text-sm xsss:text-lg text-[#535050] font-inter whitespace-nowrap mt-1"
-          >
-            Пн-пт: 10.00–21.00
-          </p>
-          <p
-            class="font-normal text-sm xsss:text-lg text-[#535050] font-inter whitespace-nowrap"
-          >
-            Сб-вс: 9.00–21.00
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col xsss:flex-row items-center justify-between mt-4 xsss:mt-[10px] gap-4 xsss:gap-0"
-      >
-        <div
-          class="flex flex-col items-start xsss:items-start gap-2 xsss:gap-3 font-normal text-sm xsss:text-lg text-[#535050] font-inter"
-        >
-          <span class="whitespace-nowrap">Схема проезда</span>
-          <div class="flex items-center gap-1">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.36732 9.96665L6.13398 11.2C5.87398 11.46 5.46065 11.46 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.3 3.66732 9.57331 3.11398 8.81331C2.56732 8.05331 2.12732 7.29331 1.80732 6.53998C1.49398 5.77998 1.33398 5.05331 1.33398 4.35998C1.33398 3.90665 1.41398 3.47331 1.57398 3.07331C1.73398 2.66665 1.98732 2.29331 2.34065 1.95998C2.76732 1.53998 3.23398 1.33331 3.72732 1.33331C3.91398 1.33331 4.10065 1.37331 4.26732 1.45331C4.44065 1.53331 4.59398 1.65331 4.71398 1.82665L6.26065 4.00665C6.38065 4.17331 6.46732 4.32665 6.52732 4.47331C6.58732 4.61331 6.62065 4.75331 6.62065 4.87998C6.62065 5.03998 6.57398 5.19998 6.48065 5.35331C6.39398 5.50665 6.26732 5.66665 6.10732 5.82665L5.60065 6.35331C5.52732 6.42665 5.49398 6.51331 5.49398 6.61998C5.49398 6.67331 5.50065 6.71998 5.51398 6.77331C5.53398 6.82665 5.55398 6.86665 5.56732 6.90665C5.68732 7.12665 5.89398 7.41331 6.18732 7.75998C6.48732 8.10665 6.80732 8.45998 7.15398 8.81331C7.22065 8.87998 7.29398 8.94665 7.36065 9.01331C7.62732 9.27331 7.63398 9.69998 7.36732 9.96665Z"
-                fill="#535050"
-              />
-              <path
-                d="M14.6471 12.22C14.6471 12.4067 14.6137 12.6 14.5471 12.7867C14.5271 12.84 14.5071 12.8933 14.4804 12.9467C14.3671 13.1867 14.2204 13.4133 14.0271 13.6267C13.7004 13.9867 13.3404 14.2467 12.9337 14.4133C12.9271 14.4133 12.9204 14.42 12.9137 14.42C12.5204 14.58 12.0937 14.6667 11.6337 14.6667C10.9537 14.6667 10.2271 14.5067 9.46039 14.18C8.69372 13.8533 7.92706 13.4133 7.16706 12.86C6.90706 12.6667 6.64706 12.4733 6.40039 12.2667L8.58039 10.0867C8.76706 10.2267 8.93372 10.3333 9.07372 10.4067C9.10706 10.42 9.14706 10.44 9.19372 10.46C9.24706 10.48 9.30039 10.4867 9.36039 10.4867C9.47372 10.4867 9.56039 10.4467 9.63372 10.3733L10.1404 9.87332C10.3071 9.70665 10.4671 9.57999 10.6204 9.49999C10.7737 9.40665 10.9271 9.35999 11.0937 9.35999C11.2204 9.35999 11.3537 9.38665 11.5004 9.44665C11.6471 9.50665 11.8004 9.59332 11.9671 9.70665L14.1737 11.2733C14.3471 11.3933 14.4671 11.5333 14.5404 11.7C14.6071 11.8667 14.6471 12.0333 14.6471 12.22Z"
-                fill="#535050"
-              />
-            </svg>
-            <a href="#" class="text-sm xsss:text-lg">+79227288288</a>
-          </div>
-          <div class="flex items-center gap-1">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.36732 9.96665L6.13398 11.2C5.87398 11.46 5.46065 11.46 5.19398 11.2066C5.12065 11.1333 5.04732 11.0666 4.97398 10.9933C4.28732 10.3 3.66732 9.57331 3.11398 8.81331C2.56732 8.05331 2.12732 7.29331 1.80732 6.53998C1.49398 5.77998 1.33398 5.05331 1.33398 4.35998C1.33398 3.90665 1.41398 3.47331 1.57398 3.07331C1.73398 2.66665 1.98732 2.29331 2.34065 1.95998C2.76732 1.53998 3.23398 1.33331 3.72732 1.33331C3.91398 1.33331 4.10065 1.37331 4.26732 1.45331C4.44065 1.53331 4.59398 1.65331 4.71398 1.82665L6.26065 4.00665C6.38065 4.17331 6.46732 4.32665 6.52732 4.47331C6.58732 4.61331 6.62065 4.75331 6.62065 4.87998C6.62065 5.03998 6.57398 5.19998 6.48065 5.35331C6.39398 5.50665 6.26732 5.66665 6.10732 5.82665L5.60065 6.35331C5.52732 6.42665 5.49398 6.51331 5.49398 6.61998C5.49398 6.67331 5.50065 6.71998 5.51398 6.77331C5.53398 6.82665 5.55398 6.86665 5.56732 6.90665C5.68732 7.12665 5.89398 7.41331 6.18732 7.75998C6.48732 8.10665 6.80732 8.45998 7.15398 8.81331C7.22065 8.87998 7.29398 8.94665 7.36065 9.01331C7.62732 9.27331 7.63398 9.69998 7.36732 9.96665Z"
-                fill="#535050"
-              />
-              <path
-                d="M14.6471 12.22C14.6471 12.4067 14.6137 12.6 14.5471 12.7867C14.5271 12.84 14.5071 12.8933 14.4804 12.9467C14.3671 13.1867 14.2204 13.4133 14.0271 13.6267C13.7004 13.9867 13.3404 14.2467 12.9337 14.4133C12.9271 14.4133 12.9204 14.42 12.9137 14.42C12.5204 14.58 12.0937 14.6667 11.6337 14.6667C10.9537 14.6667 10.2271 14.5067 9.46039 14.18C8.69372 13.8533 7.92706 13.4133 7.16706 12.86C6.90706 12.6667 6.64706 12.4733 6.40039 12.2667L8.58039 10.0867C8.76706 10.2267 8.93372 10.3333 9.07372 10.4067C9.10706 10.42 9.14706 10.44 9.19372 10.46C9.24706 10.48 9.30039 10.4867 9.36039 10.4867C9.47372 10.4867 9.56039 10.4467 9.63372 10.3733L10.1404 9.87332C10.3071 9.70665 10.4671 9.57999 10.6204 9.49999C10.7737 9.40665 10.9271 9.35999 11.0937 9.35999C11.2204 9.35999 11.3537 9.38665 11.5004 9.44665C11.6471 9.50665 11.8004 9.59332 11.9671 9.70665L14.1737 11.2733C14.3471 11.3933 14.4671 11.5333 14.5404 11.7C14.6071 11.8667 14.6471 12.0333 14.6471 12.22Z"
-                fill="#535050"
-              />
-            </svg>
-            <a href="#" class="text-sm xsss:text-lg">+73513790979</a>
-          </div>
-        </div>
-        <div class="mt-4 xsss:mt-0 ml-[20px] xsss:ml-0">
-          <h3
-            class="font-semibold text-base xsss:text-lg text-[#535050] font-inter"
-          >
-            Контакты
-          </h3>
-          <p class="font-normal text-xs text-[#535050] font-inter mt-1">
-            Всесезонный центр<br />
-            спорта и отдыха —<br />
-            находится в<br />
-            рекреационной зоне на<br />
-            границе с заповедниками<br />
-            «Таганай» и «Зюраткуль»<br />
-            всего в 30 минутах езды<br />
-            от Златоуста, и в 1,5 часах<br />
-            от Челябинска.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex ml-[20px] xsss:flex-row items-start gap-4 xsss:gap-[35px] mt-6"
-      >
-        <div>
-          <div>
-            <ul class="space-y-1 xsss:space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg text-black hover:text-blue-600 font-inter"
-                  >Услуги</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg text-black hover:text-blue-600 font-inter"
-                  >Трассы</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg text-black hover:text-blue-600 font-inter"
-                  >Кафе</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg text-black hover:text-blue-600 font-inter"
-                  >Гостиница</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg text-black hover:text-blue-600 font-inter"
-                  >О комплексе</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="mt-2 xsss:mt-[10px]">
-            <ul class="space-y-1 xsss:space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                  >Новости</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                  >Тарифы</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                  >Прокат</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                  >Акции и туры</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <ul class="space-y-1 xsss:space-y-2">
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Цены на услуги</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Схема проезда</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Туры</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Проживание</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Забронировать номер</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Детям</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Акции</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="font-normal text-sm xsss:text-lg leading-[120%] text-[#2d2d2d] hover:text-blue-600 font-inter"
-                >Веб-камеры</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
